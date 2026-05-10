@@ -1,7 +1,0 @@
-<Solution>
-  <Folder Name="/src/">
-    <Project Path="src/SMM.Core/SMM.Core.csproj" />
-    <Project Path="src/SMM.Data/SMM.Data.csproj" />
-    <Project Path="src/SMM.Desktop/SMM.Desktop.csproj" />
-  </Folder>
-</Solution>

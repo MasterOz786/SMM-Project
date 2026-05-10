@@ -1,0 +1,114 @@
+file,type,member,cyclomatic_complexity
+"SMM.Desktop/MainForm.cs","MainForm","BuildHeadTab()",15
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","RegisterStudent(int eventId, int userId)",9
+"SMM.Desktop/RegisterForm.cs","RegisterForm","OnCreate(object? sender, EventArgs e)",7
+"SMM.Data/Repositories/ActivityRepository.cs","ActivityRepository","ListRecent(int take = 200)",6
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","ReadEvents(SqlCommand cmd)",6
+"SMM.Core/Security/PasswordHasher.cs","PasswordHasher","Verify(string password, string stored)",5
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","SetMemberActive(int societyId, int headUserId, int memberUserId, bool active)",4
+"SMM.Data/Repositories/TaskRepository.cs","TaskRepository","ListForSociety(int societyId)",4
+"SMM.Data/Repositories/UserRepository.cs","UserRepository","TryLogin(string email, string password)",4
+"SMM.Desktop/LoginForm.cs","LoginForm","OnLoginClick(object? sender, EventArgs e)",4
+"SMM.Desktop/MainForm.cs","MainForm","BuildStudentTab()",4
+"SMM.Desktop/MainForm.cs","MainForm","MainForm(AuthUser user)",4
+"SMM.Desktop/MainForm.cs","MainForm","RunAdminUser(bool active)",4
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","EnsureSocietyApproved(int societyId)",3
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ApproveMembershipRequest(int requestId, int responderUserId)",3
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","CreateMembershipRequest(int studentUserId, int societyId)",3
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ListMembershipOverviewForStudent(int studentUserId)",3
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ReadSocieties(SqlCommand cmd)",3
+"SMM.Desktop/MainForm.cs","MainForm","RefreshHead()",3
+"SMM.Desktop/MainForm.cs","MainForm","RunAdminEvent(EventAdminStatus st)",3
+"SMM.Desktop/MainForm.cs","MainForm","RunAdminSociety(SocietyStatus st)",3
+"SMM.Desktop/Workspace/GridSelectionHelper.cs","GridSelectionHelper","GetSelectedId(DataGridView dgv, string propertyName)",3
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","ApproveOrRejectRequest(int requestId, bool approve)",3
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","EnsureHead(int societyId, int headUserId)",2
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","ListTicketsForStudent(int userId)",2
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","UpdateEvent(int eventId, int societyId, int headUserId, string title, string? description, string? venue, DateTimeOffset startsAt, DateTimeOffset? endsAt, int? capacity, EventLifecycleStatus lifecycle)",2
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","CreateSociety(int headUserId, string name, string? description)",2
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ListMembers(int societyId)",2
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ListPendingRequestsForSociety(int societyId)",2
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","RejectMembershipRequest(int requestId, int responderUserId)",2
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","UpdateSocietyProfile(int societyId, int actingHeadUserId, string name, string? description)",2
+"SMM.Data/Repositories/TaskRepository.cs","TaskRepository","EnsureHead(int societyId, int headUserId)",2
+"SMM.Data/Repositories/TaskRepository.cs","TaskRepository","SetStatus(int taskId, int societyId, int headUserId, SocietyTaskStatus status)",2
+"SMM.Data/Repositories/UserRepository.cs","UserRepository","ListUsers()",2
+"SMM.Data/Repositories/UserRepository.cs","UserRepository","RegisterStudent(string fullName, string email, string password, string? studentNumber, string? program, byte? yearOfStudy)",2
+"SMM.Data/SqlTime.cs","SqlTime","UtcNullable(DateTime? sqlValue)",2
+"SMM.Desktop/MainForm.cs","MainForm","BuildAdminTab()",2
+"SMM.Desktop/MainForm.cs","MainForm","CurrentSocietyId()",2
+"SMM.Desktop/MainForm.cs","MainForm","RefreshAdmin()",2
+"SMM.Desktop/MainForm.cs","MainForm","RefreshAll()",2
+"SMM.Desktop/MainForm.cs","MainForm","RefreshHeadDetail()",2
+"SMM.Desktop/MainForm.cs","MainForm","RunHeadRequest(bool approve)",2
+"SMM.Desktop/MainForm.cs","MainForm","RunSafe(Action action)",2
+"SMM.Desktop/Program.cs","Program","Main()",2
+"SMM.Desktop/Workspace/AdminWorkspace.cs","AdminWorkspace","SetUserActive(int targetUserId, bool active)",2
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","LoadDetail(int societyId)",2
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","PublishEvent(int societyId, int eventId)",2
+"SMM.Core/Security/PasswordHasher.cs","PasswordHasher","Hash(string password)",1
+"SMM.Core/TicketCode.cs","TicketCode","New()",1
+"SMM.Data/Repositories/ActivityRepository.cs","ActivityRepository","Log(int? userId, string actionType, string? entityType, int? entityId, string? details)",1
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","CreateEvent(int societyId, int createdByUserId, string title, string? description, string? venue, DateTimeOffset startsAt, DateTimeOffset? endsAt, int? capacity)",1
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","ListForSociety(int societyId)",1
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","ListPendingAdminApproval()",1
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","ListPublishedForStudents()",1
+"SMM.Data/Repositories/EventRepository.cs","EventRepository","SetAdminStatus(int eventId, EventAdminStatus status, int adminUserId)",1
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","GetSocietyReport(int societyId)",1
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","GetUniversityReport()",1
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ListAllSocietiesForAdmin()",1
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ListApprovedSocieties()",1
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","ListSocietiesForHead(int headUserId)",1
+"SMM.Data/Repositories/SocietyRepository.cs","SocietyRepository","SetSocietyStatus(int societyId, SocietyStatus status, int? adminUserId)",1
+"SMM.Data/Repositories/TaskRepository.cs","TaskRepository","CreateTask(int societyId, int assignedByUserId, int assignedToUserId, string title, string? description, DateTimeOffset? dueDate)",1
+"SMM.Data/Repositories/UserRepository.cs","UserRepository","SetUserActive(int userId, bool active)",1
+"SMM.Data/SqlTime.cs","SqlTime","Utc(DateTime sqlValue)",1
+"SMM.Desktop/LoginForm.cs","LoginForm","LoginForm()",1
+"SMM.Desktop/LoginForm.cs","LoginForm","OnExitClick(object? sender, EventArgs e)",1
+"SMM.Desktop/LoginForm.cs","LoginForm","OnRegisterClick(object? sender, EventArgs e)",1
+"SMM.Desktop/LoginForm.Designer.cs","LoginForm","InitializeComponent()",1
+"SMM.Desktop/MainForm.cs","MainForm","MkGrid()",1
+"SMM.Desktop/MainForm.cs","MainForm","PanelWithLabel(string title, Control content)",1
+"SMM.Desktop/MainForm.cs","MainForm","RefreshStudent()",1
+"SMM.Desktop/RegisterForm.cs","RegisterForm","OnCancel(object? sender, EventArgs e)",1
+"SMM.Desktop/RegisterForm.cs","RegisterForm","RegisterForm()",1
+"SMM.Desktop/RegisterForm.Designer.cs","RegisterForm","InitializeComponent()",1
+"SMM.Desktop/RegisterForm.Designer.cs","RegisterForm","MkBox(int x, int y, int w)",1
+"SMM.Desktop/RegisterForm.Designer.cs","RegisterForm","MkLabel(string text, int x, int y)",1
+"SMM.Desktop/Workspace/AdminWorkspace.cs","AdminWorkspace","AdminWorkspace(          int adminUserId,          UserRepository users,          SocietyRepository society,          EventRepository events,          ActivityRepository activity)",1
+"SMM.Desktop/Workspace/AdminWorkspace.cs","AdminWorkspace","LoadDashboard()",1
+"SMM.Desktop/Workspace/AdminWorkspace.cs","AdminWorkspace","SetEventAdminStatus(int eventId, EventAdminStatus status)",1
+"SMM.Desktop/Workspace/AdminWorkspace.cs","AdminWorkspace","SetSocietyStatus(int societyId, SocietyStatus status)",1
+"SMM.Desktop/Workspace/AdminWorkspace.cs","AdminWorkspace","UniversityReport()",1
+"SMM.Desktop/Workspace/IAdminWorkspace.cs","?","LoadDashboard()",1
+"SMM.Desktop/Workspace/IAdminWorkspace.cs","?","SetEventAdminStatus(int eventId, EventAdminStatus status)",1
+"SMM.Desktop/Workspace/IAdminWorkspace.cs","?","SetSocietyStatus(int societyId, SocietyStatus status)",1
+"SMM.Desktop/Workspace/IAdminWorkspace.cs","?","SetUserActive(int targetUserId, bool active)",1
+"SMM.Desktop/Workspace/IAdminWorkspace.cs","?","UniversityReport()",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","ApproveOrRejectRequest(int requestId, bool approve)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","AssignTask(int societyId, int assigneeUserId, string title)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","CancelEvent(int societyId, int eventId)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","CreateDraftEvent(int societyId, string title, string? venue, DateTimeOffset startsAt, int? capacity)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","DeactivateMember(int societyId, int memberUserId)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","ListMySocieties()",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","LoadDetail(int societyId)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","PublishEvent(int societyId, int eventId)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","RequestNewSociety(string name)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","SaveProfile(int societyId, string name, string? description)",1
+"SMM.Desktop/Workspace/ISocietyHeadWorkspace.cs","?","SocietyReport(int societyId)",1
+"SMM.Desktop/Workspace/IStudentWorkspace.cs","?","ApplyToSociety(int societyId)",1
+"SMM.Desktop/Workspace/IStudentWorkspace.cs","?","LoadDashboard()",1
+"SMM.Desktop/Workspace/IStudentWorkspace.cs","?","RegisterForEvent(int eventId)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","AssignTask(int societyId, int assigneeUserId, string title)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","CancelEvent(int societyId, int eventId)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","CreateDraftEvent(int societyId, string title, string? venue, DateTimeOffset startsAt, int? capacity)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","DeactivateMember(int societyId, int memberUserId)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","ListMySocieties()",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","RequestNewSociety(string name)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","SaveProfile(int societyId, string name, string? description)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","SocietyHeadWorkspace(          int headUserId,          SocietyRepository society,          EventRepository events,          TaskRepository tasks,          ActivityRepository activity)",1
+"SMM.Desktop/Workspace/SocietyHeadWorkspace.cs","SocietyHeadWorkspace","SocietyReport(int societyId)",1
+"SMM.Desktop/Workspace/StudentWorkspace.cs","StudentWorkspace","ApplyToSociety(int societyId)",1
+"SMM.Desktop/Workspace/StudentWorkspace.cs","StudentWorkspace","LoadDashboard()",1
+"SMM.Desktop/Workspace/StudentWorkspace.cs","StudentWorkspace","RegisterForEvent(int eventId)",1
+"SMM.Desktop/Workspace/StudentWorkspace.cs","StudentWorkspace","StudentWorkspace(int studentUserId, SocietyRepository society, EventRepository events, ActivityRepository activity)",1

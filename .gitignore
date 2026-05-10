@@ -1,0 +1,5 @@
+*.zip
+*.slnx
+**/obj
+**/bin
+*.csproj
